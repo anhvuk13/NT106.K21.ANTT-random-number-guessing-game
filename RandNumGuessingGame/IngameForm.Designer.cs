@@ -40,7 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.playerNum = new System.Windows.Forms.Label();
-            this.btnAutoPlaySIngleRound = new System.Windows.Forms.Button();
+            this.btnAutoPlaySingleTurn = new System.Windows.Forms.Button();
             this.btnAutoplayWholeGame = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pic3 = new System.Windows.Forms.PictureBox();
@@ -223,24 +223,24 @@
             this.playerNum.TabIndex = 7;
             this.playerNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAutoPlaySIngleRound
+            // btnAutoPlaySingleTurn
             // 
-            this.btnAutoPlaySIngleRound.BackColor = System.Drawing.Color.Black;
-            this.btnAutoPlaySIngleRound.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAutoPlaySIngleRound.Enabled = false;
-            this.btnAutoPlaySIngleRound.FlatAppearance.BorderSize = 0;
-            this.btnAutoPlaySIngleRound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutoPlaySIngleRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutoPlaySIngleRound.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnAutoPlaySIngleRound.Location = new System.Drawing.Point(0, 0);
-            this.btnAutoPlaySIngleRound.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAutoPlaySIngleRound.Name = "btnAutoPlaySIngleRound";
-            this.btnAutoPlaySIngleRound.Size = new System.Drawing.Size(125, 16);
-            this.btnAutoPlaySIngleRound.TabIndex = 9;
-            this.btnAutoPlaySIngleRound.TabStop = false;
-            this.btnAutoPlaySIngleRound.Text = "Autoplay a Single Round";
-            this.btnAutoPlaySIngleRound.UseVisualStyleBackColor = false;
-            this.btnAutoPlaySIngleRound.Click += new System.EventHandler(this.btnAutoPlaySIngleRound_Click);
+            this.btnAutoPlaySingleTurn.BackColor = System.Drawing.Color.Black;
+            this.btnAutoPlaySingleTurn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAutoPlaySingleTurn.Enabled = false;
+            this.btnAutoPlaySingleTurn.FlatAppearance.BorderSize = 0;
+            this.btnAutoPlaySingleTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutoPlaySingleTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutoPlaySingleTurn.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAutoPlaySingleTurn.Location = new System.Drawing.Point(0, 0);
+            this.btnAutoPlaySingleTurn.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAutoPlaySingleTurn.Name = "btnAutoPlaySingleTurn";
+            this.btnAutoPlaySingleTurn.Size = new System.Drawing.Size(125, 16);
+            this.btnAutoPlaySingleTurn.TabIndex = 9;
+            this.btnAutoPlaySingleTurn.TabStop = false;
+            this.btnAutoPlaySingleTurn.Text = "Autoplay a Single Turn";
+            this.btnAutoPlaySingleTurn.UseVisualStyleBackColor = false;
+            this.btnAutoPlaySingleTurn.Click += new System.EventHandler(this.btnAutoPlaySingleTurn_Click);
             // 
             // btnAutoplayWholeGame
             // 
@@ -265,7 +265,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btnAutoPlaySIngleRound, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnAutoPlaySingleTurn, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAutoplayWholeGame, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(397, 28);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -352,7 +352,7 @@
             this.luckyNumber.TabIndex = 15;
             this.luckyNumber.Text = "999";
             // 
-            // ClientForm
+            // IngameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -379,7 +379,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "ClientForm";
+            this.Name = "IngameForm";
             this.Text = "Anonymous";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientForm_FormClosing);
             this.Load += new System.EventHandler(this.ClientForm_Load);
@@ -398,14 +398,14 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox message;
-        private System.Windows.Forms.RichTextBox conversation;
+        public System.Windows.Forms.RichTextBox conversation;
         private System.Windows.Forms.Button btnReady;
         private System.Windows.Forms.TextBox answer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label playerNum;
-        private System.Windows.Forms.Button btnAutoPlaySIngleRound;
+        private System.Windows.Forms.Button btnAutoPlaySingleTurn;
         private System.Windows.Forms.Button btnAutoplayWholeGame;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pic1;

@@ -28,7 +28,7 @@ namespace RNGG
         private Dictionary<String, bool> readyPlayers = new Dictionary<string, bool>();
         private int clientsCount = 0, luckyNumber, round = 0, currentRound, timeupCount, startRange, endRange;
         private bool ingame = false;
-        private String correctPlayer;
+        private String correctPlayer, time = "";
         private Random rand;
 
         //  init
@@ -51,6 +51,10 @@ namespace RNGG
 
             if (serverForm != null)
             {
+                this.Hide();
+                
+                String text = $">>> {time} - Server hosted a connection... <<<\n\n{serverForm.conversation.Text}\n>>> Connection closed <<<\n\n\n\n";
+                (new Browser(text)).ShowDialog();
                 serverForm.isServer = serverForm.isIngame = false;
                 serverForm.Close();
             }
@@ -73,7 +77,7 @@ namespace RNGG
                 serverForm.Show();
                 return;
             }
-            serverForm = new IngameForm(this, joinUsername.Text, joinIP.Text, joinPort.Text);
+            serverForm = new IngameForm(this, joinUsername.Text, joinIP.Text, joinPort.Text, time);
             serverForm.Show();
             if (thread == null) serverForm = null;
         }
@@ -105,6 +109,8 @@ namespace RNGG
                 return;
             }
 
+            time = DateTime.Now.ToString("h:mm:ss tt");
+
             this.Invoke(new MethodInvoker(delegate ()
             {
                 joinUsername.Text = "Server";
@@ -135,7 +141,7 @@ namespace RNGG
                 NetworkStream stream = client.GetStream();
                 byte[] buffer = new byte[1024];
                 int bytesCount = stream.Read(buffer, 0, buffer.Length);
-                string username = Encoding.UTF8.GetString(buffer, 0, bytesCount);
+                String username = Encoding.UTF8.GetString(buffer, 0, bytesCount);
 
                 if (thread != null && ingame)
                 {
@@ -156,14 +162,15 @@ namespace RNGG
                 lock (_lock) clientsList.Add(username, client);
                 if (username != "Server")
                 {
-                    broadcast($"m>>> {username} has joined the game.");
+                    broadcast($"m>>> {username} has joined the game.", username);
                     scoreBoard.Add(username, 0);
                 }
+                
                 clientsCount++;
 
                 Thread handlingThread = new Thread(o => clientsHandling((string)o));
                 handlingThread.Start(username);
-                broadcast($"p{clientsList.Count - 1}");
+                broadcast($"\t{clientsList.Count - 1}");
             }
 
             btnServer.Invoke(new MethodInvoker(delegate ()
@@ -250,7 +257,7 @@ namespace RNGG
                         endGame();
                     }
                 }
-                broadcast($"p{clientsList.Count - 1}");
+                broadcast($"\t{clientsList.Count - 1}");
                 scoreBoard.Remove(username);
                 if (readyPlayers.ContainsKey(username)) readyPlayers.Remove(username);
                 readyCheck();
@@ -332,18 +339,20 @@ namespace RNGG
             correctPlayer = "";
         }
 
-        public void broadcast(string data)
+        public void broadcast(string data, String except = "")
         {
             byte[] buffer = Encoding.UTF8.GetBytes($"{data}\n");
             lock (_lock)
             {
-                foreach (TcpClient c in clientsList.Values)
+                foreach (var c in clientsList) if (c.Key != except)
                 {
-                    NetworkStream stream = c.GetStream();
+                    NetworkStream stream = c.Value.GetStream();
                     stream.Write(buffer, 0, buffer.Length);
                 }
             }
         }
+
+
 
 
 

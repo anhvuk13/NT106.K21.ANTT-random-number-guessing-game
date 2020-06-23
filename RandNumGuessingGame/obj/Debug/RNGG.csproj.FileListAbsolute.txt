@@ -8,3 +8,6 @@ C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.cspr
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.csproj.CoreCompileInputs.cache
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.exe
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.pdb
+C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.csprojAssemblyReference.cache
+C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.Browser.resources
+C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.CustomMessageBox.resources

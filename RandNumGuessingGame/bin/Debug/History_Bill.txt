@@ -1,0 +1,109 @@
+>>> 10:36:04 AM - Bill connected to Server... <<<
+
+The compitition will begin after all competitors are Ready!
+>>> Waiting for players...
+>>> Bill is Ready!
+>>> Elon is Ready!
+>>> Steve is Ready!
+There is/are 3 participant(s).
+This game has 7 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [30, 80].
+Steve sent a wrong answer (73). -1p
+Elon sent a wrong answer (60). -1p
+Steve sent a wrong answer (36). -1p
+Bill sent a wrong answer (72). -1p
+Elon sent a wrong answer (72). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 53.
+------------------------------
+>>> Round 2: Submit an integer in [70, 120].
+Steve sent a wrong answer (118). -1p
+Elon sent a wrong answer (110). -1p
+Bill sent a wrong answer (100). -1p
+Elon sent a wrong answer (107). -1p
+Steve sent a wrong answer (117). -1p
+Bill sent a wrong answer (112). -1p
+Elon sent a wrong answer (109). -1p
+Steve sent a wrong answer (116). -1p
+Bill sent a wrong answer (74). -1p
+Elon sent a wrong answer (70). -1p
+Steve sent a wrong answer (73). -1p
+Bill sent a wrong answer (106). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 87.
+------------------------------
+>>> Round 3: Submit an integer in [100, 120].
+Elon sent a wrong answer (113). -1p
+Bill sent a wrong answer (116). -1p
+Steve sent a wrong answer (105). -1p
+Elon sent a wrong answer (105). -1p
+We've just found the Round 3's winner...
+Congratulations! Bill is the fastest to give the correct answer! +10p
+The Lucky Number is 111.
+------------------------------
+>>> Round 4: Submit an integer in [60, 80].
+Elon sent a wrong answer (79). -1p
+Bill sent a wrong answer (71). -1p
+Steve sent a wrong answer (76). -1p
+Bill sent a wrong answer (72). -1p
+Elon sent a wrong answer (74). -1p
+Steve sent a wrong answer (65). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 66.
+------------------------------
+>>> Round 5: Submit an integer in [30, 60].
+Bill sent a wrong answer (41). -1p
+Elon sent a wrong answer (38). -1p
+Steve sent a wrong answer (31). -1p
+Steve sent a wrong answer (38). -1p
+Elon sent a wrong answer (34). -1p
+Bill sent a wrong answer (59). -1p
+Steve sent a wrong answer (41). -1p
+Elon sent a wrong answer (59). -1p
+Bill sent a wrong answer (38). -1p
+Bill sent a wrong answer (42). -1p
+Elon sent a wrong answer (30). -1p
+Steve sent a wrong answer (57). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 50.
+------------------------------
+>>> Round 6: Submit an integer in [0, 10].
+Elon sent a wrong answer (3). -1p
+Steve sent a wrong answer (7). -1p
+Bill sent a wrong answer (1). -1p
+Steve sent a wrong answer (8). -1p
+Elon sent a wrong answer (9). -1p
+We've just found the Round 6's winner...
+Congratulations! Bill is the fastest to give the correct answer! +10p
+The Lucky Number is 2.
+------------------------------
+>>> Round 7: Submit an integer in [80, 90].
+Bill sent a wrong answer (86). -1p
+Steve sent a wrong answer (89). -1p
+Elon sent a wrong answer (85). -1p
+Bill sent a wrong answer (82). -1p
+Steve sent a wrong answer (88). -1p
+Elon sent a wrong answer (88). -1p
+Elon sent a wrong answer (81). -1p
+Steve sent a wrong answer (87). -1p
+Bill sent a wrong answer (81). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 83.
+------------------------------
+The highest score: 4
+These user(s) have reached the highest score:
+  + Bill
+Your score: 4
+==============================
+
+New game generating...
+Waiting for competitors...
+>>> Player 4 has joined the game.
+>>> Player 4 has left the game.
+>>> Elon has left the game.
+
+>>> Connection closed <<<
+
+
+
+

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
@@ -17,7 +18,7 @@ namespace RNGG
         private MainForm parent;
         private TcpClient client = null;
         private Thread thread = null;
-        private string joinUsername, joinIP, joinPort;
+        private String joinUsername, joinIP, joinPort, time;
         private bool isAuto = false;
         public bool isIngame = false, isServer = false;
         private int timeLeft = -1, startRange, endRange, valRange, lastSubmitTime;
@@ -25,7 +26,7 @@ namespace RNGG
         private Random rand;
 
         //  init
-        public IngameForm(MainForm parent, string joinUsername, string joinIP, string joinPort)
+        public IngameForm(MainForm parent, string joinUsername, string joinIP, string joinPort, String time)
         {
             InitializeComponent();
             this.MaximizeBox = false;
@@ -33,6 +34,7 @@ namespace RNGG
             this.joinUsername = joinUsername;
             this.joinIP = joinIP;
             this.joinPort = joinPort;
+            this.time = time;
             rand = new Random();
         }
 
@@ -74,27 +76,34 @@ namespace RNGG
             buffer = new byte[1024];
             int bytesCount = stream.Read(buffer, 0, buffer.Length);
             string res = Encoding.UTF8.GetString(buffer, 0, bytesCount);
-            if (res == "Server")
+            String[] ress = res.Split('\t');
+            if (ress[0] == "Server")
             {
                 isServer = true;
-                btnReady.Enabled = btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySIngleRound.Enabled = btnClear.Enabled = label1.Enabled = false;
+                btnReady.Enabled = btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = btnClear.Enabled = label1.Enabled = false;
                 answer.BorderStyle = BorderStyle.None;
             }
-            else if (res == "@@@Ingame!@@@")
+            else if (ress[0] == "@@@Ingame!@@@")
             {
                 MessageBox.Show("Sorry, the game has started!", "Error");
                 this.Close();
                 return;
             }
-            else if (res == " ")
+            else if (ress[0] == " ")
             {
                 MessageBox.Show($"{username} is invalid or already picked.", "Error");
                 this.Close();
                 return;
             }
 
-            if (!isServer) MessageBox.Show($"{res} is your username.", "Success");
-            this.Text = res;
+            if (!isServer)
+            {
+                MessageBox.Show($"{ress[0]} is your username.", "Success");
+                time = DateTime.Now.ToString("h:mm:ss tt");
+            }
+
+            this.Text = ress[0];
+            if (ress.Length > 1) playerNum.Text = $"{ress[1].Trim('\n')} player(s) have joined the game.";
 
             thread = new Thread(o => ReceiveData((TcpClient)o));
             thread.Start(client);
@@ -114,6 +123,28 @@ namespace RNGG
                 e.Cancel = true;
                 (new Thread(() => MessageBox.Show("You have to stay until the game ends.\nPlease take your responsibility for having clicked \"Ready!\" button.\nHave fun!", "Error"))).Start();
                 return;
+            }
+
+            if (this.Text != "Anonymous")
+            try
+            {
+                String path = Path.Combine(
+                    Path.GetDirectoryName(Application.ExecutablePath),
+                    $"History_{this.Text}.txt"
+                );
+                StreamWriter sw;
+                if (!File.Exists(path)) sw = File.CreateText(path);
+                else sw = File.AppendText(path);
+                String hostOrJoin;
+                if (this.Text == "Server") hostOrJoin = $">>> {time} - Server hosted a connection... <<<";
+                else hostOrJoin = $">>> {time} - {this.Text} connected to Server... <<<";
+                conversation.Text = $"{hostOrJoin}\n\n{conversation.Text}\n>>> Connection closed <<<\n\n\n\n";
+                foreach (String line in conversation.Lines)
+                    sw.WriteLine(line);
+                sw.Close();
+            } catch
+            {
+                MessageBox.Show("Can't write log file.", "Error");
             }
 
             if (thread != null) thread.Abort();
@@ -146,12 +177,12 @@ namespace RNGG
                 pic1.Image = pic2.Image = pic3.Image = (Image)Properties.Resources.ResourceManager.GetObject($"_{timeLeft}");
                 if (timeLeft == 0)
                 {
-                    btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = label3.Enabled = label4.Enabled = range.Enabled = luckyNumber.Enabled = false;
+                    btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = label3.Enabled = label4.Enabled = range.Enabled = luckyNumber.Enabled = false;
                     send("@@@Timeup!@@@");
                 }
                 else if (!isAuto && lastSubmitTime - timeLeft >= 3)
                 {
-                    btnSubmit.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = true;
+                    btnSubmit.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = true;
                     answer.Focus();
                     answer.Select();
                 }
@@ -192,7 +223,7 @@ namespace RNGG
             (new Thread(() => send($"s{val}"))).Start();
             lastSubmitTime = timeLeft;
             if (!this.InvokeRequired)
-                btnSubmit.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = false;
+                btnSubmit.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = false;
             int index = trueVal.IndexOf(val);
             if (index != -1 && index <= valRange)
             {
@@ -225,14 +256,14 @@ namespace RNGG
             }           
         }
 
-        private void btnAutoPlaySIngleRound_Click(object sender, EventArgs e)
+        private void btnAutoPlaySingleTurn_Click(object sender, EventArgs e)
         {
             autoSubmit();
         }
 
         private void btnAutoplayWholeGame_Click(object sender, EventArgs e)
         {
-            btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = false;
+            btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = false;
             isAuto = true;
             (new Thread(() => autoMode())).Start();
         }
@@ -276,7 +307,7 @@ namespace RNGG
                             conversation.AppendText($"{data.Substring(1)}\n");
                             conversation.ScrollToCaret();
                         }));
-                    else if (data[0] == 'p')
+                    else if (data[0] == '\t')
                         this.Invoke(new MethodInvoker(delegate ()
                         {
                             playerNum.Text = $"{data.Substring(1)} player(s) have joined the game.";
@@ -315,7 +346,7 @@ namespace RNGG
                             if (isAuto) (new Thread(() => autoMode())).Start();
                             else this.Invoke(new MethodInvoker(delegate ()
                             {
-                                btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = true;
+                                btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = true;
                                 answer.Focus();
                                 answer.Select();
                             }));
@@ -333,7 +364,7 @@ namespace RNGG
                         this.Invoke(new MethodInvoker(delegate ()
                         {
                             btnReady.Enabled = true;
-                            btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySIngleRound.Enabled = answer.Enabled = false;
+                            btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = false;
                         }));
                         isIngame = isAuto = false;
                     }
@@ -365,19 +396,19 @@ namespace RNGG
 
 
         //gui
-        private void btnAutoPlaySIngleRound_MouseHover(object sender, EventArgs e)
+        private void btnAutoPlaySingleRound_MouseHover(object sender, EventArgs e)
         {
-            MainForm.btnMouseHover(btnAutoPlaySIngleRound);
+            MainForm.btnMouseHover(btnAutoPlaySingleTurn);
         }
 
-        private void btnAutoPlaySIngleRound_MouseLeave(object sender, EventArgs e)
+        private void btnAutoPlaySingleRound_MouseLeave(object sender, EventArgs e)
         {
-            MainForm.btnMouseLeave(btnAutoPlaySIngleRound);
+            MainForm.btnMouseLeave(btnAutoPlaySingleTurn);
         }
 
-        private void btnAutoPlaySIngleRound_MouseDown(object sender, MouseEventArgs e)
+        private void btnAutoPlaySingleRound_MouseDown(object sender, MouseEventArgs e)
         {
-            MainForm.btnMouseDown(btnAutoPlaySIngleRound);
+            MainForm.btnMouseDown(btnAutoPlaySingleTurn);
         }
 
         private void btnAutoplayWholeGame_MouseHover(object sender, EventArgs e)
