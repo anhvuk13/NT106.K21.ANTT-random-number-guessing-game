@@ -1,17 +1,8 @@
->>> 10:37:28 AM - Player 4 connected to Server... <<<
+>>> 11:21:00 PM - Player 3 connected to Server... <<<
 
 The compitition will begin after all competitors are Ready!
 >>> Waiting for players...
-
->>> Connection closed <<<
-
-
-
-
->>> 11:21:08 PM - Player 4 connected to Server... <<<
-
-The compitition will begin after all competitors are Ready!
->>> Waiting for players...
+>>> Player 4 has joined the game.
 >>> Player 3 is Ready!
 >>> Player 4 is Ready!
 >>> Player 2 is Ready!
@@ -136,12 +127,11 @@ The Lucky Number is 76.
 The highest score: 3
 These user(s) have reached the highest score:
   + Player 3
-Your score: -18
+Your score: 3
 ==============================
 
 New game generating...
 Waiting for competitors...
->>> Player 3 has left the game.
 
 >>> Connection closed <<<
 

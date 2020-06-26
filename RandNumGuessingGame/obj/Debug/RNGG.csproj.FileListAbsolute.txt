@@ -11,3 +11,16 @@ C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.pdb
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.csprojAssemblyReference.cache
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.Browser.resources
 C:\Users\anvut\OneDrive\Desktop\tcp-chat\RandNumGuessingGame\obj\Debug\RNGG.CustomMessageBox.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\bin\Debug\RNGG.exe.config
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\bin\Debug\RNGG.exe
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.csprojAssemblyReference.cache
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.Browser.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.CustomMessageBox.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.MainForm.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.IngameForm.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.Properties.Resources.resources
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.csproj.GenerateResource.cache
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.csproj.CoreCompileInputs.cache
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.exe
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\obj\Debug\RNGG.pdb
+C:\Users\anvut\OneDrive\Desktop\RNGG\source\RandNumGuessingGame\bin\Debug\RNGG.pdb

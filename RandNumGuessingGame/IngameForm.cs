@@ -180,6 +180,8 @@ namespace RNGG
                     btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = label3.Enabled = label4.Enabled = range.Enabled = luckyNumber.Enabled = false;
                     send("@@@Timeup!@@@");
                 }
+                else if (isAuto && lastSubmitTime - timeLeft >= 3)
+                    (new Thread(() => autoSubmit())).Start();
                 else if (!isAuto && lastSubmitTime - timeLeft >= 3)
                 {
                     btnSubmit.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = true;
@@ -242,18 +244,18 @@ namespace RNGG
 
         private void autoSubmit()
         {
-            int val = rand.Next(0, valRange + 1);
-            submit(trueVal[val]);
-        }
-
-        private void autoMode()
-        {
-            while (true)
+            if (this.InvokeRequired)
+                this.Invoke(new MethodInvoker(delegate ()
+                {
+                    autoSubmit();
+                }));
+            else
             {
-                if (timeLeft <= 0) break;
-                if (lastSubmitTime - timeLeft < 3) continue;
-                autoSubmit();
-            }           
+                btnSubmit.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = false;
+                if (isAuto) btnAutoplayWholeGame.Enabled = false;
+                int val = rand.Next(0, valRange + 1);
+                submit(trueVal[val]);
+            }
         }
 
         private void btnAutoPlaySingleTurn_Click(object sender, EventArgs e)
@@ -263,9 +265,8 @@ namespace RNGG
 
         private void btnAutoplayWholeGame_Click(object sender, EventArgs e)
         {
-            btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = false;
             isAuto = true;
-            (new Thread(() => autoMode())).Start();
+            autoSubmit();
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -343,8 +344,7 @@ namespace RNGG
                         else
                         {
                             lastSubmitTime = 100;
-                            if (isAuto) (new Thread(() => autoMode())).Start();
-                            else this.Invoke(new MethodInvoker(delegate ()
+                            this.Invoke(new MethodInvoker(delegate ()
                             {
                                 btnSubmit.Enabled = btnAutoplayWholeGame.Enabled = btnAutoPlaySingleTurn.Enabled = answer.Enabled = true;
                                 answer.Focus();
