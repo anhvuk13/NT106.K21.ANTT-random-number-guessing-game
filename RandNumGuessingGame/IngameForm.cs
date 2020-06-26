@@ -221,7 +221,7 @@ namespace RNGG
 
         private void submit(int val)
         {
-            if (timeLeft <= 0) return;
+            if (timeLeft <= 0 || lastSubmitTime - timeLeft < 3) return;
             (new Thread(() => send($"s{val}"))).Start();
             lastSubmitTime = timeLeft;
             if (!this.InvokeRequired)

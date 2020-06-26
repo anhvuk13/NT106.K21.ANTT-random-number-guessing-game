@@ -1,465 +1,203 @@
->>> 10:35:01 AM - Server hosted a connection... <<<
-
-The compitition will begin after all competitors are Ready!
->>> Waiting for players...
->>> Steve has joined the game.
->>> Elon has joined the game.
->>> Bill has joined the game.
->>> Bill is Ready!
->>> Elon is Ready!
->>> Steve is Ready!
-There is/are 3 participant(s).
-This game has 7 Round(s). Let's fight!
->>> Round 1: Submit an integer in [30, 80].
-Steve sent a wrong answer (73). -1p
-Elon sent a wrong answer (60). -1p
-Steve sent a wrong answer (36). -1p
-Bill sent a wrong answer (72). -1p
-Elon sent a wrong answer (72). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 53.
-------------------------------
->>> Round 2: Submit an integer in [70, 120].
-Steve sent a wrong answer (118). -1p
-Elon sent a wrong answer (110). -1p
-Bill sent a wrong answer (100). -1p
-Elon sent a wrong answer (107). -1p
-Steve sent a wrong answer (117). -1p
-Bill sent a wrong answer (112). -1p
-Elon sent a wrong answer (109). -1p
-Steve sent a wrong answer (116). -1p
-Bill sent a wrong answer (74). -1p
-Elon sent a wrong answer (70). -1p
-Steve sent a wrong answer (73). -1p
-Bill sent a wrong answer (106). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 87.
-------------------------------
->>> Round 3: Submit an integer in [100, 120].
-Elon sent a wrong answer (113). -1p
-Bill sent a wrong answer (116). -1p
-Steve sent a wrong answer (105). -1p
-Elon sent a wrong answer (105). -1p
-We've just found the Round 3's winner...
-Congratulations! Bill is the fastest to give the correct answer! +10p
-The Lucky Number is 111.
-------------------------------
->>> Round 4: Submit an integer in [60, 80].
-Elon sent a wrong answer (79). -1p
-Bill sent a wrong answer (71). -1p
-Steve sent a wrong answer (76). -1p
-Bill sent a wrong answer (72). -1p
-Elon sent a wrong answer (74). -1p
-Steve sent a wrong answer (65). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 66.
-------------------------------
->>> Round 5: Submit an integer in [30, 60].
-Bill sent a wrong answer (41). -1p
-Elon sent a wrong answer (38). -1p
-Steve sent a wrong answer (31). -1p
-Steve sent a wrong answer (38). -1p
-Elon sent a wrong answer (34). -1p
-Bill sent a wrong answer (59). -1p
-Steve sent a wrong answer (41). -1p
-Elon sent a wrong answer (59). -1p
-Bill sent a wrong answer (38). -1p
-Bill sent a wrong answer (42). -1p
-Elon sent a wrong answer (30). -1p
-Steve sent a wrong answer (57). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 50.
-------------------------------
->>> Round 6: Submit an integer in [0, 10].
-Elon sent a wrong answer (3). -1p
-Steve sent a wrong answer (7). -1p
-Bill sent a wrong answer (1). -1p
-Steve sent a wrong answer (8). -1p
-Elon sent a wrong answer (9). -1p
-We've just found the Round 6's winner...
-Congratulations! Bill is the fastest to give the correct answer! +10p
-The Lucky Number is 2.
-------------------------------
->>> Round 7: Submit an integer in [80, 90].
-Bill sent a wrong answer (86). -1p
-Steve sent a wrong answer (89). -1p
-Elon sent a wrong answer (85). -1p
-Bill sent a wrong answer (82). -1p
-Steve sent a wrong answer (88). -1p
-Elon sent a wrong answer (88). -1p
-Elon sent a wrong answer (81). -1p
-Steve sent a wrong answer (87). -1p
-Bill sent a wrong answer (81). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 83.
-------------------------------
-The highest score: 4
-These user(s) have reached the highest score:
-  + Bill
-==============================
-
-New game generating...
-Waiting for competitors...
->>> Player 4 has joined the game.
->>> Player 4 has left the game.
-
->>> Connection closed <<<
-
-
-
-
->>> 11:27:39 AM - Server hosted a connection... <<<
-
-The compitition will begin after all competitors are Ready!
->>> Waiting for players...
-
->>> Connection closed <<<
-
-
-
-
->>> 10:54:36 PM - Server hosted a connection... <<<
-
-The compitition will begin after all competitors are Ready!
->>> Waiting for players...
-
->>> Connection closed <<<
-
-
-
-
->>> 10:55:50 PM - Server hosted a connection... <<<
+>>> 11:55:52 PM - Server hosted a connection... <<<
 
 The compitition will begin after all competitors are Ready!
 >>> Waiting for players...
 >>> Player 1 has joined the game.
 >>> Player 1 is Ready!
 There is/are 1 participant(s).
-This game has 6 Round(s). Let's fight!
->>> Round 1: Submit an integer in [80, 100].
+This game has 5 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [10, 30].
+Player 1 sent a wrong answer (14). -1p
+Player 1 sent a wrong answer (21). -1p
+Player 1 sent a wrong answer (17). -1p
 What a pity! No one has given the correct answer.
-The Lucky Number is 84.
+The Lucky Number is 30.
 ------------------------------
->>> Round 2: Submit an integer in [70, 100].
-What a pity! No one has given the correct answer.
-The Lucky Number is 79.
-------------------------------
->>> Round 3: Submit an integer in [80, 100].
-What a pity! No one has given the correct answer.
-The Lucky Number is 80.
-------------------------------
->>> Round 4: Submit an integer in [40, 70].
-Server: alo
-What a pity! No one has given the correct answer.
-The Lucky Number is 40.
-------------------------------
-Server: hihi
->>> Round 5: Submit an integer in [0, 40].
-Player 1 sent a wrong answer (35). -1p
-Player 1 sent a wrong answer (33). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 25.
-------------------------------
->>> Round 6: Submit an integer in [100, 110].
-We've just found the Round 6's winner...
-Congratulations! Player 1 is the fastest to give the correct answer! +10p
-The Lucky Number is 102.
-------------------------------
-The highest score: 8
-These user(s) have reached the highest score:
-  + Player 1
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
 ==============================
 
 New game generating...
 Waiting for competitors...
+This game has 10 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [20, 60].
+
+>>> Connection closed <<<
+
+
+
+
+>>> 11:57:52 PM - Server hosted a connection... <<<
+
+The compitition will begin after all competitors are Ready!
+>>> Waiting for players...
+>>> Player 1 has joined the game.
+>>> Player 1 is Ready!
+There is/are 1 participant(s).
+This game has 10 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [80, 130].
+Player 1 sent a wrong answer (112). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 126.
+------------------------------
+>>> Round 2: Submit an integer in [20, 50].
+Player 1 sent a wrong answer (27). -1p
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
+==============================
+
+New game generating...
+Waiting for competitors...
+
+>>> Connection closed <<<
+
+
+
+
+>>> 11:59:27 PM - Server hosted a connection... <<<
+
+The compitition will begin after all competitors are Ready!
+>>> Waiting for players...
+>>> Player 1 has joined the game.
+>>> Player 1 is Ready!
+There is/are 1 participant(s).
+This game has 10 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [70, 120].
+Player 1 sent a wrong answer (78). -1p
+Player 1 sent a wrong answer (76). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 77.
+------------------------------
+>>> Round 2: Submit an integer in [30, 60].
+Player 1 sent a wrong answer (31). -1p
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
+==============================
+
+New game generating...
+Waiting for competitors...
+
+>>> Connection closed <<<
+
+
+
+
+>>> 12:00:18 AM - Server hosted a connection... <<<
+
+The compitition will begin after all competitors are Ready!
+>>> Waiting for players...
+>>> Player 1 has joined the game.
+>>> Player 1 is Ready!
+There is/are 1 participant(s).
+This game has 7 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [50, 80].
+Player 1 sent a wrong answer (69). -1p
+Player 1 sent a wrong answer (67). -1p
+Player 1 sent a wrong answer (76). -1p
+Player 1 sent a wrong answer (71). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 56.
+------------------------------
+>>> Round 2: Submit an integer in [90, 130].
+Player 1 sent a wrong answer (124). -1p
+Player 1 sent a wrong answer (110). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 106.
+------------------------------
+>>> Round 3: Submit an integer in [10, 30].
+Player 1 sent a wrong answer (27). -1p
+Player 1 sent a wrong answer (14). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 21.
+------------------------------
+>>> Round 4: Submit an integer in [20, 40].
+Player 1 sent a wrong answer (27). -1p
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
+==============================
+
+New game generating...
+Waiting for competitors...
+>>> Player 2 has joined the game.
+>>> Player 2 is Ready!
+There is/are 1 participant(s).
+This game has 6 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [80, 120].
+Player 2 sent a wrong answer (85). -1p
+Player 2 sent a wrong answer (83). -1p
+Player 2 sent a wrong answer (94). -1p
+Player 2 sent a wrong answer (88). -1p
+What a pity! No one has given the correct answer.
+The Lucky Number is 89.
+------------------------------
+>>> Round 2: Submit an integer in [100, 130].
+Player 2 sent a wrong answer (107). -1p
+>>> Player 2 has left the game.
+>>> Everybody have left the game!
+==============================
+
+New game generating...
+Waiting for competitors...
+
+>>> Connection closed <<<
+
+
+
+
+>>> 12:04:33 AM - Server hosted a connection... <<<
+
+The compitition will begin after all competitors are Ready!
+>>> Waiting for players...
+>>> Player 1 has joined the game.
 >>> Player 1 is Ready!
 There is/are 1 participant(s).
 This game has 9 Round(s). Let's fight!
->>> Round 1: Submit an integer in [90, 110].
-Player 1 sent a wrong answer (94). -1p
-Player 1 sent a wrong answer (101). -1p
+>>> Round 1: Submit an integer in [60, 110].
+Player 1 sent a wrong answer (90). -1p
+Player 1 sent a wrong answer (84). -1p
+Player 1 sent a wrong answer (69). -1p
+Player 1 sent a wrong answer (106). -1p
 What a pity! No one has given the correct answer.
-The Lucky Number is 102.
+The Lucky Number is 83.
 ------------------------------
->>> Round 2: Submit an integer in [30, 50].
-Player 1 sent a wrong answer (48). -1p
-Player 1 sent a wrong answer (38). -1p
-Player 1 sent a wrong answer (37). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 47.
-------------------------------
->>> Round 3: Submit an integer in [70, 90].
-Player 1 sent a wrong answer (86). -1p
-Player 1 sent a wrong answer (71). -1p
-We've just found the Round 3's winner...
-Congratulations! Player 1 is the fastest to give the correct answer! +10p
-The Lucky Number is 76.
-------------------------------
->>> Round 4: Submit an integer in [0, 20].
-Player 1 sent a wrong answer (8). -1p
-Player 1 sent a wrong answer (2). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 9.
-------------------------------
->>> Round 5: Submit an integer in [10, 60].
-Player 1 sent a wrong answer (24). -1p
-Player 1 sent a wrong answer (52). -1p
-Player 1 sent a wrong answer (44). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 18.
-------------------------------
->>> Round 6: Submit an integer in [20, 70].
-Player 1 sent a wrong answer (68). -1p
-Player 1 sent a wrong answer (20). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 50.
-------------------------------
->>> Round 7: Submit an integer in [10, 50].
-Player 1 sent a wrong answer (36). -1p
-Player 1 sent a wrong answer (25). -1p
-Player 1 sent a wrong answer (22). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 41.
-------------------------------
->>> Round 8: Submit an integer in [50, 70].
-Player 1 sent a wrong answer (61). -1p
-Player 1 sent a wrong answer (60). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 63.
-------------------------------
->>> Round 9: Submit an integer in [60, 80].
-Player 1 sent a wrong answer (73). -1p
-Player 1 sent a wrong answer (61). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 77.
-------------------------------
-The highest score: -11
-These user(s) have reached the highest score:
-  + Player 1
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
 ==============================
 
 New game generating...
 Waiting for competitors...
->>> Player 1 has left the game.
->>> Everybody have left the game!
+This game has 10 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [10, 20].
 
 >>> Connection closed <<<
 
 
 
 
->>> 11:17:33 PM - Server hosted a connection... <<<
+>>> 12:09:31 AM - Server hosted a connection... <<<
 
 The compitition will begin after all competitors are Ready!
 >>> Waiting for players...
 >>> Player 1 has joined the game.
 >>> Player 1 is Ready!
 There is/are 1 participant(s).
-This game has 8 Round(s). Let's fight!
->>> Round 1: Submit an integer in [10, 30].
-Player 1 sent a wrong answer (123). -1p
-Player 1 sent a wrong answer (12). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 25.
-------------------------------
->>> Round 2: Submit an integer in [90, 110].
-Player 1 sent a wrong answer (91). -1p
-Player 1 sent a wrong answer (97). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 109.
-------------------------------
->>> Round 3: Submit an integer in [50, 90].
-Player 1 sent a wrong answer (85). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 81.
-------------------------------
->>> Round 4: Submit an integer in [80, 130].
-Player 1 sent a wrong answer (85). -1p
-We've just found the Round 4's winner...
-Congratulations! Player 1 is the fastest to give the correct answer! +10p
-The Lucky Number is 102.
-------------------------------
->>> Round 5: Submit an integer in [60, 90].
-Player 1 sent a wrong answer (61). -1p
-Player 1 sent a wrong answer (79). -1p
-Player 1 sent a wrong answer (60). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 68.
-------------------------------
->>> Round 6: Submit an integer in [0, 20].
-Player 1 sent a wrong answer (4). -1p
-Player 1 sent a wrong answer (12). -1p
-Player 1 sent a wrong answer (10). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 9.
-------------------------------
->>> Round 7: Submit an integer in [50, 90].
+This game has 9 Round(s). Let's fight!
+>>> Round 1: Submit an integer in [50, 90].
 Player 1 sent a wrong answer (80). -1p
-Player 1 sent a wrong answer (53). -1p
+Player 1 sent a wrong answer (59). -1p
+Player 1 sent a wrong answer (66). -1p
 What a pity! No one has given the correct answer.
 The Lucky Number is 77.
 ------------------------------
->>> Round 8: Submit an integer in [70, 120].
-We've just found the Round 8's winner...
-Congratulations! Player 1 is the fastest to give the correct answer! +10p
-The Lucky Number is 90.
-------------------------------
-The highest score: 6
-These user(s) have reached the highest score:
-  + Player 1
+>>> Round 2: Submit an integer in [60, 110].
+Player 1 sent a wrong answer (91). -1p
+Player 1 sent a wrong answer (95). -1p
+>>> Player 1 has left the game.
+>>> Everybody have left the game!
 ==============================
 
 New game generating...
 Waiting for competitors...
->>> Player 1 has left the game.
->>> Everybody have left the game!
-
->>> Connection closed <<<
-
-
-
-
->>> 11:20:35 PM - Server hosted a connection... <<<
-
-The compitition will begin after all competitors are Ready!
->>> Waiting for players...
->>> Player 1 has joined the game.
->>> Player 2 has joined the game.
->>> Player 3 has joined the game.
->>> Player 4 has joined the game.
->>> Player 3 is Ready!
->>> Player 4 is Ready!
->>> Player 2 is Ready!
->>> Player 1 is Ready!
-There is/are 4 participant(s).
-This game has 10 Round(s). Let's fight!
->>> Round 1: Submit an integer in [50, 60].
-Player 1 sent a wrong answer (56). -1p
-Player 1 sent a wrong answer (50). -1p
-Player 2 sent a wrong answer (52). -1p
-Player 4 sent a wrong answer (51). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 53.
-------------------------------
->>> Round 2: Submit an integer in [0, 30].
-Player 4 sent a wrong answer (15). -1p
-Player 1 sent a wrong answer (23). -1p
-Player 2 sent a wrong answer (13). -1p
-Player 3 sent a wrong answer (1). -1p
-We've just found the Round 2's winner...
-Congratulations! Player 2 is the fastest to give the correct answer! +10p
-The Lucky Number is 0.
-------------------------------
->>> Round 3: Submit an integer in [30, 50].
-We've just found the Round 3's winner...
-Congratulations! Player 3 is the fastest to give the correct answer! +10p
-The Lucky Number is 43.
-------------------------------
->>> Round 4: Submit an integer in [30, 70].
-Player 3 sent a wrong answer (52). -1p
-Player 1 sent a wrong answer (54). -1p
-Player 2 sent a wrong answer (39). -1p
-Player 4 sent a wrong answer (70). -1p
-Player 3 sent a wrong answer (35). -1p
-Player 1 sent a wrong answer (55). -1p
-Player 2 sent a wrong answer (69). -1p
-Player 4 sent a wrong answer (51). -1p
-We've just found the Round 4's winner...
-Congratulations! Player 3 is the fastest to give the correct answer! +10p
-The Lucky Number is 32.
-------------------------------
->>> Round 5: Submit an integer in [30, 60].
-Player 2 sent a wrong answer (49). -1p
-Player 4 sent a wrong answer (33). -1p
-Player 3 sent a wrong answer (33). -1p
-Player 1 sent a wrong answer (51). -1p
-Player 4 sent a wrong answer (43). -1p
-Player 3 sent a wrong answer (40). -1p
-Player 1 sent a wrong answer (36). -1p
-Player 2 sent a wrong answer (59). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 35.
-------------------------------
->>> Round 6: Submit an integer in [70, 110].
-Player 2 sent a wrong answer (95). -1p
-Player 4 sent a wrong answer (110). -1p
-Player 3 sent a wrong answer (98). -1p
-Player 1 sent a wrong answer (85). -1p
-Player 4 sent a wrong answer (108). -1p
-Player 2 sent a wrong answer (91). -1p
-Player 3 sent a wrong answer (72). -1p
-Player 1 sent a wrong answer (78). -1p
-Player 2 sent a wrong answer (70). -1p
-Player 4 sent a wrong answer (76). -1p
-Player 3 sent a wrong answer (73). -1p
-Player 1 sent a wrong answer (76). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 82.
-------------------------------
->>> Round 7: Submit an integer in [20, 30].
-Player 4 sent a wrong answer (25). -1p
-Player 3 sent a wrong answer (29). -1p
-Player 2 sent a wrong answer (27). -1p
-Player 1 sent a wrong answer (30). -1p
-Player 3 sent a wrong answer (22). -1p
-Player 2 sent a wrong answer (29). -1p
-Player 1 sent a wrong answer (23). -1p
-Player 4 sent a wrong answer (24). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 28.
-------------------------------
->>> Round 8: Submit an integer in [90, 130].
-Player 2 sent a wrong answer (95). -1p
-Player 3 sent a wrong answer (119). -1p
-Player 1 sent a wrong answer (101). -1p
-Player 4 sent a wrong answer (117). -1p
-Player 1 sent a wrong answer (118). -1p
-Player 2 sent a wrong answer (119). -1p
-Player 4 sent a wrong answer (110). -1p
-Player 3 sent a wrong answer (111). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 125.
-------------------------------
->>> Round 9: Submit an integer in [70, 90].
-Player 3 sent a wrong answer (72). -1p
-Player 1 sent a wrong answer (86). -1p
-Player 2 sent a wrong answer (86). -1p
-Player 4 sent a wrong answer (87). -1p
-Player 4 sent a wrong answer (90). -1p
-Player 1 sent a wrong answer (83). -1p
-Player 3 sent a wrong answer (83). -1p
-Player 2 sent a wrong answer (88). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 70.
-------------------------------
->>> Round 10: Submit an integer in [70, 80].
-Player 4 sent a wrong answer (78). -1p
-Player 3 sent a wrong answer (73). -1p
-Player 2 sent a wrong answer (79). -1p
-Player 1 sent a wrong answer (74). -1p
-Player 3 sent a wrong answer (80). -1p
-Player 1 sent a wrong answer (70). -1p
-Player 2 sent a wrong answer (71). -1p
-Player 4 sent a wrong answer (79). -1p
-Player 1 sent a wrong answer (73). -1p
-Player 2 sent a wrong answer (80). -1p
-Player 3 sent a wrong answer (79). -1p
-Player 4 sent a wrong answer (80). -1p
-What a pity! No one has given the correct answer.
-The Lucky Number is 76.
-------------------------------
-The highest score: 3
-These user(s) have reached the highest score:
-  + Player 3
-==============================
-
-New game generating...
-Waiting for competitors...
->>> Player 3 has left the game.
->>> Player 4 has left the game.
->>> Player 2 has left the game.
->>> Player 1 has left the game.
->>> Everybody have left the game!
 
 >>> Connection closed <<<
 

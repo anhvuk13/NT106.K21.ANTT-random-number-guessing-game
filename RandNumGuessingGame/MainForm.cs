@@ -281,13 +281,14 @@ namespace RNGG
             else message = $"mCongratulations! {correctPlayer} is the fastest to give the correct answer! +10p";
             broadcast($"{message}\nmThe Lucky Number is {luckyNumber}.\nm------------------------------");
             if (currentRound > round) (new Thread(endGame)).Start();
-            else (new Thread(roundStart)).Start();
+            else if (ingame) (new Thread(roundStart)).Start();
         }
 
         private void endGame()
         {
             if (ingame)
             {
+                ingame = false;
                 int highscore = Int32.MinValue;
                 foreach (var i in scoreBoard)
                     if (i.Value > highscore) highscore = i.Value;
@@ -311,8 +312,6 @@ namespace RNGG
                     }
                     catch { }
                 }
-
-                ingame = false;
             }
 
             broadcast($"m==============================\nm\nmNew game generating...\nmWaiting for competitors...\n@@@Newgame!@@@");
